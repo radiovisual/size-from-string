@@ -33,7 +33,25 @@ test('ignores spaces', t => {
 });
 
 test('number properties', t => {
-	const obj = fn('100x100');
+	const obj = fn('500x700');
 	t.is(typeof obj.width, 'number');
 	t.is(typeof obj.height, 'number');
+});
+
+test('squares single values', t => {
+	const obj = fn('99');
+	t.is(obj.width, 99);
+	t.is(obj.height, 99);
+});
+
+test('negative numbers', t => {
+	const obj = fn('-205x-505');
+	t.is(obj.width, -205.0);
+	t.is(obj.height, -505.0);
+});
+
+test('floats', t => {
+	const obj = fn('205.01x505.02');
+	t.is(obj.width, 205.01);
+	t.is(obj.height, 505.02);
 });
