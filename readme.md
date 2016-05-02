@@ -39,7 +39,7 @@ If you pass in a single value, it will automatically square that value for you.
 - `"100"` → `{width: 100, height: 100}`
 - `"100x200"` → `{width: 100, height: 200}`
 - `"-100 x -200"` → `{width: -100, height: -200}`
-- `"-100.01 x -200.05"` → `{width: -100.01, height: -100.05}`
+- `"-100.01 x -200.05"` → `{width: -100.01, height: -200.05}`
 
 
 
