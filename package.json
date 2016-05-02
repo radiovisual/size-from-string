@@ -1,0 +1,38 @@
+{
+  "name": "size-from-string",
+  "version": "1.0.0",
+  "description": "Get a size object from a string. '100x200' → {width: 100, height: 200}",
+  "license": "MIT",
+  "repository": "radiovisual/size-from-string",
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "wuergler@gmail.com",
+    "url": "numetriclabs.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "height",
+    "width",
+    "string",
+    "from",
+    "object",
+    "dimension",
+    "size",
+    "get"
+  ],
+  "dependencies": {
+    "selective-whitespace": "^1.0.3"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "xo": "^0.14.0"
+  }
+}
